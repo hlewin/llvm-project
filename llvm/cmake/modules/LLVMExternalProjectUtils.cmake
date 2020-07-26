@@ -272,15 +272,15 @@ function(llvm_ExternalProject_Add name source_dir)
   endif()
 
   llvm_ExternalProject_BuildCmd(run_clean clean ${BINARY_DIR})
-  ExternalProject_Add_Step(${name} clean
-    COMMAND ${run_clean}
-    COMMENT "Cleaning ${name}..."
-    DEPENDEES configure
-    ${force_deps}
-    WORKING_DIRECTORY ${BINARY_DIR}
-    EXCLUDE_FROM_MAIN 1
-    USES_TERMINAL 1
-    )
+#  ExternalProject_Add_Step(${name} clean
+#    COMMAND ${run_clean}
+#    COMMENT "Cleaning ${name}..."
+#    DEPENDEES configure
+#    ${force_deps}
+#    WORKING_DIRECTORY ${BINARY_DIR}
+#    EXCLUDE_FROM_MAIN 1
+#    USES_TERMINAL 1
+#    )
   ExternalProject_Add_StepTargets(${name} clean)
 
   if(ARG_USE_TOOLCHAIN)

@@ -449,7 +449,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${LIBCXX_LIBRARY_DIR})
 # LIBCXX_LINK_FLAGS: Linker only flags.
 # LIBCXX_LIBRARIES: libraries libc++ is linked to.
 set(LIBCXX_COMPILE_FLAGS "")
-set(LIBCXX_LINK_FLAGS "")
+# set(LIBCXX_LINK_FLAGS "")
 set(LIBCXX_LIBRARIES "")
 
 # Include macros for adding and removing libc++ flags.
